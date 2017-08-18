@@ -4,5 +4,19 @@
 <%= form_for(@neko, url: cats_path) do |f| %>
   <%= f.label :name  %>
   <%= f.text_field :name  %>
+  <br>
+  <!-- boolean -->
+  <%= select :cat, :sex, [["オス", true], ["メス", false]] %>
+  <br>
+
+
+
+  <%= f.label :age  %>
+  <%= f.text_field :age  %>
+  <br>
+
+  <%= f.label :kind  %>
+  <%= f.text_field :kind  %>
+  <br>
   <%= f.submit %>
 <% end %>

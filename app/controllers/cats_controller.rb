@@ -16,6 +16,8 @@ class CatsController < ApplicationController
   def create
     @neko = Neko.new
     @neko.name = params[:neko][:name]
+    @neko.age = params[:neko][:age]
+    @neko.kind = params[:neko][:kind]
     @neko.save
     redirect_to cats_path
   end

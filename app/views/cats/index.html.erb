@@ -4,6 +4,10 @@
 <% @nekos.each do |neko| %>
   <p>
     <%= neko.name %>
+    <%= neko.sex %>
+    <%= neko.age %>
+    <%= neko.kind %>
+
   </p>
 <% end %>
 <%= link_to "猫をつくる", new_cat_path %>
